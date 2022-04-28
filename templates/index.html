@@ -4,12 +4,12 @@
 	<head>
 
 		<!-- Title -->
-		<title>Qidirish | SUSYS ACADEMY - Biz bilan o'zingizni yanada rivojlantiring</title>
+		<title>Qidirish tizmi| Kozimov Portfolio</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
-		<meta name="description" content="SUSYS ACADEMY- Biz bilan o'zingizni yanada rivojlantiring">
-		<meta name="author" content="www.subux.uz">
+		<meta name="description" content="Qidirish tizmi| Kozimov Portfolio">
+		<meta name="author" content="www.kozimov.uz">
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -76,7 +76,7 @@
 							<div class="tt-logo"> 
 								<a href="/">
 									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
-									<img src="{% static '/img/logo-light.png" class="tt-logo-light magnetic-item" alt="SUSYS"> <!-- logo light -->
+									<img src="{% static '/img/logo-light.png' %}" class="tt-logo-light magnetic-item" alt="Kozimov"> <!-- logo light -->
 								</a>
 							</div>
 							<!-- End logo -->
@@ -165,7 +165,7 @@
 											-->
 											<form class="tt-search-form tt-search-appear tt-form-minimal tt-form-lg">
 												<div class="tt-form-btn-inside">
-													<input class="tt-form-control" type="text" id="search" placeholder="Kerakli ma'lumotni yozing..." required>
+													<input class="tt-form-control" name="search" type="text" id="search" placeholder="Kerakli ma'lumotni yozing..." required>
 													<button type="submit"><i class="fas fa-search"></i></button>
 												</div>
 											</form>
@@ -173,7 +173,7 @@
 											
 										</div> <!-- /.tt-search-inner -->
 
-										<div class="tt-search-ghost tt-search-appear">SUSYS</div>
+										<div class="tt-search-ghost tt-search-appear">Kozimov</div>
 										<div class="tt-search-close-btn hide-cursor" title="Close"><i class="fas fa-times"></i></div>
 									</div>
 									<!-- End tt-Search -->
@@ -217,36 +217,14 @@
 									</thead>
 
 									<tbody>
-										<tr>
-											<td>Product One:</td>
-											<td>25.00</td>
-											<td>2</td>
-											<td>50.00</td>
+                                        {% for work in works %}
+                                        <tr>
+											<td>{{ work.name }}</td>
+											<td>{{ work.surname }}</td>
+											<td>{{ work.age }}</td>
+											<td>{{ work.job }}</td>
 										</tr>
-										<tr>
-											<td>Product One:</td>
-											<td>25.00</td>
-											<td>3</td>
-											<td>75.00</td>
-										</tr>
-										<tr>
-											<td>Product One:</td>
-											<td>25.00</td>
-											<td>1</td>
-											<td>25.00</td>
-										</tr>
-										<tr>
-											<td>Product One:</td>
-											<td>25.00</td>
-											<td>4</td>
-											<td>100.00</td>
-										</tr>
-										<tr>
-											<td>Product One:</td>
-											<td>5.00</td>
-											<td>2</td>
-											<td>50.00</td>
-										</tr>
+                                        {% endfor %}
 									</tbody>
 								</table>
 
@@ -272,7 +250,7 @@
 								<div class="footer-col-inner">
 
 									<div class="tt-copyright">
-										© Copyright - <a href="https://www.subux.uz" target="_blank" rel="noopener" class="tt-link">SUB_UX</a>
+										© Copyright - <a href="https://t.me/ziyokhiddin_kozimov" target="_blank" rel="noopener" class="tt-link">Kozimov</a>
 									</div>
 
 								</div>
@@ -285,8 +263,8 @@
 										<div class="footer-social-text"><span>Obuna</span><i class="fas fa-share-alt"></i></div>
 										<div class="social-buttons">
 											<ul>
-												<li><a href="https://t.me/susys_wdg" class="magnetic-item" target="_blank" rel="noopener">Tg.</a></li>
-												<li><a href="https://instagram.com/susys_wdg" class="magnetic-item" target="_blank" rel="noopener">In</a></li>
+												<li><a href="https://t.me/ziyokhiddin_kozimov" class="magnetic-item" target="_blank" rel="noopener">Tg.</a></li>
+												<li><a href="https://www.instagram.com/ziyohiddin_kozimov" class="magnetic-item" target="_blank" rel="noopener">In</a></li>
 											</ul>
 										</div>
 									</div>
