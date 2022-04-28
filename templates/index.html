@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 	<head>
 
@@ -26,14 +27,14 @@
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet"> <!-- Secondary/Alter font -->
 
 		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="assets/vendor/normalize/normalize.min.css"> <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
-		<link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome-all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
-		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
-		<link rel="stylesheet" href="assets/vendor/lightgallery/css/lightgallery.min.css"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
+		<link rel="stylesheet" href="{% static '/vendor/normalize/normalize.min.css' %}"> <!-- Normalize CSS (https://necolas.github.io/normalize.css/) -->
+		<link rel="stylesheet" href="{% static '/vendor/fontawesome/css/fontawesome-all.min.css' %}"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
+		<link rel="stylesheet" href="{% static '/vendor/swiper/css/swiper-bundle.min.css' %}"> <!-- Swiper CSS (https://swiperjs.com/) -->
+		<link rel="stylesheet" href="{% static '/vendor/lightgallery/css/lightgallery.min.css' %}"> <!-- lightGallery CSS (http://sachinchoolur.github.io/lightGallery) -->
 
 		<!-- Template master CSS -->
-		<link rel="stylesheet" href="assets/css/helper.css">
-		<link rel="stylesheet" href="assets/css/theme.css">
+		<link rel="stylesheet" href="{% static '/css/helper.css' %}">
+		<link rel="stylesheet" href="{% static '/css/theme.css' %}">
 
 	</head>
 
@@ -75,7 +76,7 @@
 							<div class="tt-logo"> 
 								<a href="/">
 									<!-- Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img"). -->
-									<img src="assets/img/logo-light.png" class="tt-logo-light magnetic-item" alt="SUSYS"> <!-- logo light -->
+									<img src="{% static '/img/logo-light.png" class="tt-logo-light magnetic-item" alt="SUSYS"> <!-- logo light -->
 								</a>
 							</div>
 							<!-- End logo -->
@@ -307,20 +308,20 @@
         
 
 		
-		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="{% static '/vendor/jquery/jquery.min.js' %}"></script>
 
-		<script src="assets/vendor/gsap/gsap.min.js"></script> 
-		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
-		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script> 
+		<script src="{% static '/vendor/gsap/gsap.min.js' %}"></script> 
+		<script src="{% static '/vendor/gsap/ScrollToPlugin.min.js' %}"></script>
+		<script src="{% static '/vendor/gsap/ScrollTrigger.min.js' %}"></script> 
 
-		<script src="assets/vendor/smooth-scrollbar.js"></script>
-		<script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script> 
-		<script src="assets/vendor/isotope/imagesloaded.pkgd.min.js"></script> 
-		<script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
-		<script src="assets/vendor/isotope/packery-mode.pkgd.min.js"></script> 
-		<script src="assets/vendor/lightgallery/js/lightgallery-all.min.js"></script> 
-		<script src="assets/vendor/jquery.mousewheel.min.js"></script> 
-		<script src="assets/js/theme.js"></script>
+		<script src="{% static '/vendor/smooth-scrollbar.js' %}"></script>
+		<script src="{% static '/vendor/swiper/js/swiper-bundle.min.js' %}"></script> 
+		<script src="{% static '/vendor/isotope/imagesloaded.pkgd.min.js' %}"></script> 
+		<script src="{% static '/vendor/isotope/isotope.pkgd.min.js' %}"></script>
+		<script src="{% static '/vendor/isotope/packery-mode.pkgd.min.js' %}"></script> 
+		<script src="{% static '/vendor/lightgallery/js/lightgallery-all.min.js' %}"></script> 
+		<script src="{% static '/vendor/jquery.mousewheel.min.js' %}"></script> 
+		<script src="{% static '/js/theme.js' %}"></script>
 
 	</body>
 
